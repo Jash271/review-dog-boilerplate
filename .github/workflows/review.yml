@@ -39,4 +39,4 @@ jobs:
           filter_mode: "nofilter" # Optional. Check all files, not just the diff
           flags: "--module" # Optional. Add custom tflint flags
           level: info
-          shellcheck_flags: --severity=style
+          
