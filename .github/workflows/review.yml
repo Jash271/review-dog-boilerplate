@@ -25,6 +25,8 @@ jobs:
       # More complex example
       - name: tflint
         uses: reviewdog/action-tflint@master
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.REVIEWDOG_GITHUB_API_TOKEN }}
         with:
           github_token: ${{ secrets.REVIEWDOG_GITHUB_API_TOKEN }}
           working_directory: "Terraform" # Optional. Change working directory
