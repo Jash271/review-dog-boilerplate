@@ -12,7 +12,7 @@ jobs:
       - name: tfsec
         uses: reviewdog/action-tfsec@master
         with:
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.TOKEN }}
           working_directory: "Terraform" # Change working directory
           reporter: github-pr-review # Change reporter
           fail_on_error: "true" # Fail action if errors are found
