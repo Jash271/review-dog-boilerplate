@@ -25,13 +25,10 @@ jobs:
       # More complex example
       - name: tflint
         uses: reviewdog/action-tflint@master
-        env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.REVIEWDOG_GITHUB_API_TOKEN }}
         with:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.REVIEWDOG_GITHUB_API_TOKEN }}
-          github_token: ${{ secrets.REVIEWDOG_GITHUB_API_TOKEN }}
-          working_directory: "Terraform" # Optional. Change working directory
-          reporter: github-pr-review # Optional. Change reporter
-          fail_on_error: "true" # Optional. Fail action if errors are found
-          filter_mode: "nofilter" # Optional. Check all files, not just the diff
-          flags: "--module" # Optional. Add custom tflint flags
+          github_token: ${{ secrets.TOKEN}}
+      - name: Run tflint with reviewdog
+        uses: reviewdog/action-tflint@v1.1.1
+
+          
+        
