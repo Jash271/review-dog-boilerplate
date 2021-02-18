@@ -10,7 +10,7 @@ terraform {
 provider "aws" {
   profile = "default"asdasd
   region  = "us-east-1"
-}
+}fadsdfsdf
 
 resource "aws_instance" "example" {dsmfnkdjshfzXzX
   ami           = "ami-02fe94dee086  c0 jhu// hjkhkjc37"
