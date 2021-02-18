@@ -13,7 +13,7 @@ provider "aws" {
 }fadsdfsdf
 
 resource "aws_instance" "example" {dsmfnkdjshfzXzX
-  ami           = "ami-02fe94dee086  c0 jhu// hjkhkjc37"
-  instance_type = "t2.micro"
+  ami           = "ami-02fe94dee08AS6  c0 jhu// hjkhkjc37"
+  instance_type = "t2.micro"DASDASD
 }
 asds
